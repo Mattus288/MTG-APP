@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayersFour">
+
+    <LinearLayout
+        android:id="@+id/LayoutBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C8C5C5"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/LayoutPlayers23"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutPlayers2and3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#C8C5C5"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:id="@+id/commander4_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/commander4_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutPlayers14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutPlayers1and4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#C8C5C5"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:id="@+id/commander4_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/commander4_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cmdrColor41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:saveEnabled="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/cmdrColor42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:saveEnabled="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/cmdrColor43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:saveEnabled="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/cmdrColor44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:saveEnabled="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewHp41"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="20dp"
+        android:rotation="90"
+        android:scrollbarSize="0dp"
+        android:text="@string/_40"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="62sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonReturn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReturn" />
+
+    <TextView
+        android:id="@+id/textViewHp42"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:rotation="90"
+        android:scrollbarSize="0dp"
+        android:text="@string/_40"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="62sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReturn"
+        app:layout_constraintEnd_toEndOf="@+id/buttonReturn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewHp43"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:rotation="270"
+        android:scrollbarSize="0dp"
+        android:text="@string/_40"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="62sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReturn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonReturn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewHp44"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="20dp"
+        android:rotation="270"
+        android:scrollbarSize="0dp"
+        android:text="@string/_40"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="62sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonReturn"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReturn" />
+
+    <Button
+        android:id="@+id/button_commander_color41"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:background="#4C4949"
+        android:rotation="90"
+        android:text="@string/c"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAdd41"
+        app:layout_constraintEnd_toStartOf="@+id/buttonReturn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReturn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_commander_color42"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#4C4949"
+        android:rotation="90"
+        android:text="@string/c"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReturn"
+        app:layout_constraintEnd_toEndOf="@+id/buttonResetCom42"
+        app:layout_constraintStart_toStartOf="@+id/buttonResetCom42"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_commander_color43"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:background="#4C4949"
+        android:rotation="270"
+        android:text="@string/c"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReturn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonReturn"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRemove43"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button_commander_color44"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:background="#4C4949"
+        android:rotation="270"
+        android:text="@string/c"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonResetCom41"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonReturn"
+        app:layout_constraintTop_toTopOf="@+id/buttonResetCom41"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewComTax41"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:rotation="90"
+        android:text="@string/cmd_tax"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewHp41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReturn" />
+
+    <TextView
+        android:id="@+id/textViewComTax42"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:rotation="90"
+        android:text="@string/cmd_tax"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReturn"
+        app:layout_constraintEnd_toStartOf="@+id/textViewHp42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewComTax43"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:rotation="270"
+        android:text="@string/cmd_tax"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReturn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewHp43"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewComTax44"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:rotation="270"
+        android:text="@string/cmd_tax"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewHp43"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReturn" />
+
+    <Button
+        android:id="@+id/buttonComTaxAdd41"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#4C4949"
+        android:onClick="addComTax"
+        android:rotation="90"
+        android:text="@string/plus"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewComTax41"
+        app:layout_constraintEnd_toEndOf="@+id/textViewComTax42"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewComTax41"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <Button
+        android:id="@+id/buttonComTaxAdd42"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#4C4949"
+        android:onClick="addComTax2"
+        android:rotation="90"
+        android:text="@string/plus"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewComTax42"
+        app:layout_constraintEnd_toEndOf="@+id/textViewComTax42"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewComTax42"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonComTaxAdd43"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#4C4949"
+        android:onClick="addComTax3"
+        android:rotation="270"
+        android:text="@string/plus"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewComTax43"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewComTax43"
+        app:layout_constraintTop_toTopOf="@+id/textViewComTax43"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonComTaxAdd44"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#4C4949"
+        android:onClick="addComTax4"
+        android:rotation="270"
+        android:text="@string/plus"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewComTax44"
+        app:layout_constraintEnd_toEndOf="@+id/textViewComTax44"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewComTax44"
+        app:layout_constraintTop_toTopOf="@+id/textViewComTax44"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonComTaxRemove41"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#4C4949"
+        android:onClick="removeComTax"
+        android:rotation="90"
+        android:text="@string/minus"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewComTax41"
+        app:layout_constraintEnd_toEndOf="@+id/textViewComTax42"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewComTax41"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonComTaxRemove42"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#4C4949"
+        android:onClick="removeComTax2"
+        android:rotation="90"
+        android:text="@string/minus"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewComTax42"
+        app:layout_constraintEnd_toEndOf="@+id/textViewComTax42"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewComTax42"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonComTaxRemove43"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#4C4949"
+        android:onClick="removeComTax3"
+        android:rotation="270"
+        android:text="@string/minus"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewComTax43"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewComTax43"
+        app:layout_constraintTop_toTopOf="@+id/textViewComTax43"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonComTaxRemove44"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#4C4949"
+        android:onClick="removeComTax4"
+        android:rotation="270"
+        android:text="@string/minus"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewComTax44"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewComTax44"
+        app:layout_constraintTop_toTopOf="@+id/textViewComTax44"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <TextView
+        android:id="@+id/textViewComTaxCount41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:rotation="90"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonComTaxAdd41"
+        app:layout_constraintEnd_toEndOf="@+id/buttonComTaxRemove41"
+        app:layout_constraintStart_toStartOf="@+id/buttonComTaxRemove41"
+        app:layout_constraintTop_toBottomOf="@+id/buttonComTaxRemove41" />
+
+    <TextView
+        android:id="@+id/textViewComTaxCount42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:rotation="90"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonComTaxAdd42"
+        app:layout_constraintEnd_toEndOf="@+id/buttonComTaxRemove42"
+        app:layout_constraintStart_toStartOf="@+id/buttonComTaxRemove42"
+        app:layout_constraintTop_toBottomOf="@+id/buttonComTaxRemove42" />
+
+    <TextView
+        android:id="@+id/textViewComTaxCount43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:rotation="270"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonComTaxRemove43"
+        app:layout_constraintEnd_toEndOf="@+id/buttonComTaxRemove43"
+        app:layout_constraintStart_toStartOf="@+id/buttonComTaxRemove43"
+        app:layout_constraintTop_toBottomOf="@+id/buttonComTaxAdd43" />
+
+    <TextView
+        android:id="@+id/textViewComTaxCount44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:rotation="270"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonComTaxRemove44"
+        app:layout_constraintEnd_toEndOf="@+id/buttonComTaxRemove44"
+        app:layout_constraintStart_toStartOf="@+id/buttonComTaxRemove44"
+        app:layout_constraintTop_toBottomOf="@+id/buttonComTaxAdd44" />
+
+    <Button
+        android:id="@+id/buttonAdd41"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#4C4949"
+        android:longClickable="false"
+        android:onClick="removeHp"
+        android:rotation="90"
+        android:text="@string/minus"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewComTax41"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRemove41"
+        app:layout_constraintStart_toStartOf="@+id/buttonRemove41"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReturn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonAdd42"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#4C4949"
+        android:longClickable="false"
+        android:onClick="addHp2"
+        android:rotation="90"
+        android:text="@string/plus"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReturn"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRemove42"
+        app:layout_constraintStart_toStartOf="@+id/buttonRemove42"
+        app:layout_constraintTop_toBottomOf="@+id/textViewComTax42"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonAdd43"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#4C4949"
+        android:longClickable="false"
+        android:onClick="addHp3"
+        android:rotation="270"
+        android:text="@string/plus"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewComTax43"
+        app:layout_constraintEnd_toEndOf="@+id/textViewHp43"
+        app:layout_constraintStart_toStartOf="@+id/textViewHp43"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonAdd44"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#4C4949"
+        android:longClickable="false"
+        android:onClick="addHp4"
+        android:rotation="270"
+        android:text="@string/plus"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAdd41"
+        app:layout_constraintEnd_toEndOf="@+id/textViewHp43"
+        app:layout_constraintStart_toStartOf="@+id/textViewHp43"
+        app:layout_constraintTop_toTopOf="@+id/buttonAdd41"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonRemove41"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#4C4949"
+        android:onClick="addHp"
+        android:rotation="90"
+        android:text="@string/plus"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewHp42"
+        app:layout_constraintStart_toStartOf="@+id/textViewHp42"
+        app:layout_constraintTop_toBottomOf="@+id/textViewComTax41"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonRemove42"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#4C4949"
+        android:onClick="removeHp2"
+        android:rotation="90"
+        android:text="@string/minus"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewComTax42"
+        app:layout_constraintEnd_toEndOf="@+id/textViewHp42"
+        app:layout_constraintStart_toStartOf="@+id/textViewHp42"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonRemove43"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#4C4949"
+        android:onClick="removeHp3"
+        android:rotation="270"
+        android:text="@string/minus"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReturn"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAdd43"
+        app:layout_constraintStart_toStartOf="@+id/buttonAdd43"
+        app:layout_constraintTop_toBottomOf="@+id/textViewComTax43"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonRemove44"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#4C4949"
+        android:onClick="removeHp4"
+        android:rotation="270"
+        android:text="@string/minus"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonRemove41"
+        app:layout_constraintEnd_toEndOf="@+id/textViewHp44"
+        app:layout_constraintStart_toStartOf="@+id/textViewHp44"
+        app:layout_constraintTop_toTopOf="@+id/buttonRemove41"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/button_monarch41"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#4C4949"
+        android:onClick="monarch1"
+        android:rotation="90"
+        android:text="@string/crown"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewComTax42"
+        app:layout_constraintStart_toStartOf="@+id/textViewComTax42"
+        app:layout_constraintTop_toBottomOf="@+id/textViewComTax41" />
+
+    <Button
+        android:id="@+id/button_monarch42"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#4C4949"
+        android:onClick="monarch2"
+        android:rotation="90"
+        android:text="@string/crown"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonResetCom42"
+        app:layout_constraintEnd_toEndOf="@+id/textViewComTax42"
+        app:layout_constraintStart_toStartOf="@+id/textViewComTax42"
+        app:layout_constraintTop_toBottomOf="@+id/textViewComTax42" />
+
+    <Button
+        android:id="@+id/button_monarch43"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#4C4949"
+        android:onClick="monarch3"
+        android:rotation="270"
+        android:text="@string/crown"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewComTax43"
+        app:layout_constraintEnd_toEndOf="@+id/textViewComTax43"
+        app:layout_constraintStart_toStartOf="@+id/textViewComTax43"
+        app:layout_constraintTop_toTopOf="@+id/buttonResetCom43" />
+
+    <Button
+        android:id="@+id/button_monarch44"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#4C4949"
+        android:onClick="monarch4"
+        android:rotation="270"
+        android:text="@string/crown"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_city41"
+        app:layout_constraintEnd_toEndOf="@+id/button_city44"
+        app:layout_constraintStart_toStartOf="@+id/button_city44"
+        app:layout_constraintTop_toTopOf="@+id/button_city41" />
+
+    <Button
+        android:id="@+id/button_city41"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#4C4949"
+        android:onClick="blessing1"
+        android:rotation="90"
+        android:text="@string/blessing"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewComTax41"
+        app:layout_constraintEnd_toEndOf="@+id/textViewComTax41"
+        app:layout_constraintStart_toStartOf="@+id/textViewComTax41"
+        app:layout_constraintTop_toTopOf="@+id/button_commander_color41" />
+
+    <Button
+        android:id="@+id/button_city42"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#4C4949"
+        android:onClick="blessing2"
+        android:rotation="90"
+        android:text="@string/blessing"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewComTax42"
+        app:layout_constraintEnd_toEndOf="@+id/textViewComTax42"
+        app:layout_constraintStart_toStartOf="@+id/textViewComTax42"
+        app:layout_constraintTop_toTopOf="@+id/button_commander_color42" />
+
+    <Button
+        android:id="@+id/button_city43"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#4C4949"
+        android:onClick="blessing3"
+        android:rotation="270"
+        android:text="@string/blessing"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/button_commander_color43"
+        app:layout_constraintEnd_toEndOf="@+id/textViewComTax43"
+        app:layout_constraintStart_toStartOf="@+id/textViewComTax43"
+        app:layout_constraintTop_toBottomOf="@+id/textViewComTax43" />
+
+    <Button
+        android:id="@+id/button_city44"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#4C4949"
+        android:onClick="blessing4"
+        android:rotation="270"
+        android:text="@string/blessing"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/button_monarch41"
+        app:layout_constraintEnd_toEndOf="@+id/textViewComTax44"
+        app:layout_constraintStart_toStartOf="@+id/textViewComTax44"
+        app:layout_constraintTop_toTopOf="@+id/button_monarch41" />
+
+    <Button
+        android:id="@+id/buttonResetCom41"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:background="#4C4949"
+        android:onClick="resetCom1"
+        android:rotation="90"
+        android:text="@string/r"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_commander_color41"
+        app:layout_constraintStart_toStartOf="@+id/button_commander_color41"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReturn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonResetCom42"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:background="#4C4949"
+        android:onClick="resetCom2"
+        android:rotation="90"
+        android:text="@string/r"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReturn"
+        app:layout_constraintEnd_toStartOf="@+id/buttonReturn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdd42"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonResetCom43"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="#4C4949"
+        android:onClick="resetCom3"
+        android:rotation="270"
+        android:text="@string/r"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReturn"
+        app:layout_constraintEnd_toEndOf="@+id/button_commander_color43"
+        app:layout_constraintStart_toStartOf="@+id/button_commander_color43"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonResetCom44"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#4C4949"
+        android:onClick="resetCom4"
+        android:rotation="270"
+        android:text="@string/r"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/button_commander_color41"
+        app:layout_constraintEnd_toEndOf="@+id/button_commander_color43"
+        app:layout_constraintStart_toStartOf="@+id/button_commander_color43"
+        app:layout_constraintTop_toTopOf="@+id/button_commander_color41"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonReturn"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:background="@drawable/menu"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

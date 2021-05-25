@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:screenOrientation="portrait"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:fillColor="#FFFFFFFF"
+        app:indicatorVisibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="4500"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp">
+
+    </com.synnapps.carouselview.CarouselView>
+
+    <ImageView
+        android:id="@+id/menuDark"
+        android:layout_width="265dp"
+        android:layout_height="290dp"
+        android:contentDescription="@string/black"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonExit"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutPlayersPick"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutPlayersPick"
+        app:layout_constraintTop_toTopOf="@+id/linearLayoutPlayersPick"
+        app:layout_constraintVertical_bias="0.29000002"
+        app:srcCompat="@drawable/menu_dark" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPlayersPick"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/buttonExit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"></LinearLayout>
+
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="@drawable/menu_button_main"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="closeApp"
+        android:shadowColor="#000000"
+        android:text="@string/exit"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/carouselView"
+        app:layout_constraintEnd_toEndOf="@+id/buttonStart"
+        app:layout_constraintStart_toEndOf="@+id/buttonStart"
+        app:layout_constraintStart_toStartOf="@+id/buttonStart"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEDH"
+        app:layout_constraintVertical_bias="0.92" />
+
+    <Button
+        android:id="@+id/buttonNoOfPlayers"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/menu_button_main"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:shadowColor="#000000"
+        android:text="@string/_2"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonExit"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEDH2"
+        app:layout_constraintStart_toStartOf="@+id/textViewEDH2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEDH2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonNoOfPlayersAdd"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/menu_button"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="addPlayers"
+        android:rotation="90"
+        android:shadowColor="#000000"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonNoOfPlayers"
+        app:layout_constraintEnd_toEndOf="@+id/menuDark"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonNoOfPlayers"
+        app:layout_constraintTop_toTopOf="@+id/buttonNoOfPlayers" />
+
+    <Button
+        android:id="@+id/buttonNoOfPlayersRemove"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/menu_button"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="removePlayers"
+        android:rotation="270"
+        android:shadowColor="#000000"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonNoOfPlayers"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNoOfPlayers"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/menuDark"
+        app:layout_constraintTop_toTopOf="@+id/buttonNoOfPlayers" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="98dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/menu_button_main"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:shadowColor="#000000"
+        android:text="@string/start"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/menuDark"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNoOfPlayersAdd"
+        app:layout_constraintStart_toEndOf="@+id/buttonNoOfPlayersRemove"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNoOfPlayers"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewEDH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:text="@string/edh_assistant"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#ECE7E7"
+        android:textColorHighlight="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <TextView
+        android:id="@+id/textViewEDH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:text="@string/number_of_players"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#ECE7E7"
+        android:textColorHighlight="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayoutPlayersPick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayoutPlayersPick"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="389dp"
+        android:layout_height="140dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.336"
+        app:srcCompat="@drawable/logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
